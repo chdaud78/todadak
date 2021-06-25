@@ -1,5 +1,4 @@
 module.exports = {
-    publicPath: '/todadak',
     outputDir: 'docs',
     css: {
         loaderOptions: {

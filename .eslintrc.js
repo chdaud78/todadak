@@ -18,7 +18,7 @@ module.exports = {
                 endOfLine: 'auto',
             },
         ],
-        "vue/script-indent": ["error",4,{"baseIndent": 1}]
+        "vue/script-indent": ["error",4,{"baseIndent": 1}],
         "indent": ["error", 4]
     },
 };
