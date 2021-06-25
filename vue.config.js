@@ -1,5 +1,6 @@
 module.exports = {
-    publicPath: '/todadak',
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/' : '/',
     outputDir: 'docs',
     css: {
         loaderOptions: {

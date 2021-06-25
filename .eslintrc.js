@@ -19,6 +19,6 @@ module.exports = {
             },
         ],
         "vue/script-indent": ["error",4,{"baseIndent": 1}],
-        "indent": ["error", 4]
+        "indent": ["error", 4],
     },
 };
