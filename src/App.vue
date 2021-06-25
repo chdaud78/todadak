@@ -1,30 +1,43 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+    <headers></headers>
+    <main @click="handleContentClose">
+        <left-aside></left-aside>
+        <router-view></router-view>
+    </main>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Headers from "./components/layouts/Header.vue";
+import LeftAside from "./components/layouts/navigation/LeftAside.vue";
 
-#nav {
-  padding: 30px;
-}
+export default {
+    name: "Main",
+    components: {
+        Headers,
+        LeftAside,
+    },
+    methods: {
+        handleContentClose() {
+            var contextMenu = document.getElementById("todo-context-menu");
+            var labelSelect = document.querySelector(".label-select");
+            var repeatSelect = document.querySelector(".repeat-select");
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+            if (contextMenu) {
+                contextMenu.classList.remove("context-active");
+            }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+            if (labelSelect) {
+                labelSelect.classList.remove("active");
+            }
+
+            if (repeatSelect) {
+                repeatSelect.classList.remove("active");
+            }
+        },
+    },
+};
+</script>
+
+<style lang="scss">
+@import "~@/assets/sass/index.sass";
 </style>
