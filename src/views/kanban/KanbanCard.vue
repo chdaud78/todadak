@@ -9,7 +9,14 @@
             >
                 <div class="todo-title-wrap">
                     <span class="todo-title">{{ todo.todo.text }}</span>
-                    <span class="star">{{ todo.todo.star }}</span>
+                    <span class="star">
+                        <template v-if="todo.todo.star == true">
+                                <font-awesome-icon :icon="['fas', 'star']"/>
+                        </template>
+                        <template v-else>
+                            <font-awesome-icon :icon="['far', 'star']"/>
+                        </template>
+                    </span>
                 </div>
                 <div class="todo-information">
                     <div class="label-wrap">
