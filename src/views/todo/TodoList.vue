@@ -24,12 +24,12 @@
                         v-for="(label, index) in todo.todo.label"
                         :key="label.index"
                         :style="
-                          'color:' +
-                          color[index] +
-                          ';' +
-                          'background-color:' +
-                          backgroundColor[index] +
-                          ';'
+                            'color:' +
+                            color[index] +
+                            ';' +
+                            'background-color:' +
+                            backgroundColor[index] +
+                            ';'
                         "
                     >
                         {{ label }}
@@ -75,13 +75,13 @@
                         v-for="(label, index) in todo.todo.label"
                         :key="label.index"
                         :style="
-              'color:' +
-              color[index] +
-              ';' +
-              'background-color:' +
-              backgroundColor[index] +
-              ';'
-            "
+                            'color:' +
+                            color[index] +
+                            ';' +
+                            'background-color:' +
+                            backgroundColor[index] +
+                            ';'
+                        "
                     >
                         {{ label }}
                     </p>

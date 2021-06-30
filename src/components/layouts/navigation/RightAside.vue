@@ -15,13 +15,13 @@
                     :key="tag.id"
                     :id="'tag' + index"
                     :style="
-            'color:' +
-            color[index] +
-            ';' +
-            'background-color:' +
-            backgroundColor[index] +
-            ';'
-          "
+                        'color:' +
+                        color[index] +
+                        ';' +
+                        'background-color:' +
+                        backgroundColor[index] +
+                        ';'
+                    "
                 >
                     {{ tag }}
                 </p>

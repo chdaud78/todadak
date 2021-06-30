@@ -1,5 +1,7 @@
 export const userStore = {
-    state: {},
+    state: {
+        user:{}
+    },
     mutations: {},
     actions: {},
     modules: {},

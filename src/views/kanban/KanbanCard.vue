@@ -20,21 +20,21 @@
                 </div>
                 <div class="todo-information">
                     <div class="label-wrap">
-            <span
-                class="todo-label"
-                v-for="(label, index) in todo.todo.label"
-                :key="label.index"
-                :style="
-                'color:' +
-                color[index] +
-                ';' +
-                'background-color:' +
-                backgroundColor[index] +
-                ';'
-              "
-            >
-              {{ label }}
-            </span>
+                        <span
+                            class="todo-label"
+                            v-for="(label, index) in todo.todo.label"
+                            :key="label.index"
+                            :style="
+                                'color:' +
+                                color[index] +
+                                ';' +
+                                'background-color:' +
+                                backgroundColor[index] +
+                                ';'
+                            "
+                        >
+                          {{ label }}
+                        </span>
                     </div>
                     <div class="todo-date-wrap">
                         <span class="todo-repeat">{{ todo.todo.repeat }}</span>
