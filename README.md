@@ -13,7 +13,7 @@ https://chdaud78.github.io/todadak
 7. Vue Component 분리의 중요성
 8. Vue 배포에 대한 이해도 향상
 
-## Left work
+## Leftover
 1. 백엔드 작업에 따른 로그인 구현
 2. AXIOS 작업
 
