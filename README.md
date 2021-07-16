@@ -1,7 +1,8 @@
-# todadak
+# Todadak Front Page
 
 ## HomePage
-https://chdaud78.github.io/todadak
+https://chdaud78.github.io/todadak -> todadak Front page (보기용)
+https://todadak.site -> todadak production site (배포 사이트)
 
 ## 목적
 1. VueX에 대한 이해도 향상
